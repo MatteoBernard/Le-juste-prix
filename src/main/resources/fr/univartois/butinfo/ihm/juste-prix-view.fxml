@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #E6E6FA;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="fr.univartois.butinfo.ihm.JustePrixController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="34.0" prefWidth="676.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Insérez une valeur entre 0 et 100 :" />
+            <AnchorPane prefHeight="28.0" prefWidth="676.0" />
+            <TextField fx:id="champEntier" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#validerEntree" prefHeight="26.0" prefWidth="133.0" promptText="juste ici !" />
+            <AnchorPane prefHeight="16.0" prefWidth="676.0" />
+            <Button fx:id="boutonValider" mnemonicParsing="false" onAction="#validerEntree" text="Valider" />
+            <AnchorPane prefHeight="52.0" prefWidth="211.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="indice :" />
+            <AnchorPane prefHeight="52.0" prefWidth="211.0" />
+            <Label fx:id="indice" text="pas d'indice" />
+            <ImageView fitHeight="200.0" fitWidth="200.0">
+               <image>
+                  <Image url="@capy.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="121.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="recommencer" layoutX="114.0" layoutY="61.0" mnemonicParsing="false" onAction="#recommencerPartie" text="Recommencer" />
+         </children></AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="357.0" prefWidth="58.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <AnchorPane prefHeight="74.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="73.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le juste prix">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="357.0" prefWidth="66.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
